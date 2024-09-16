@@ -1,4 +1,3 @@
-
 from Priority import Priority
 
 class Task:
@@ -14,10 +13,10 @@ class Task:
         self.completed = True
 
     def update_description(self, new_description):
-       self.description = new_description
+        self.description = new_description
 
     def update_due_date(new_due_date):
-       self.due_date = new_due_date 
+        self.due_date = new_due_date 
 
     def update_priority(self, new_priority):
         self.priority = new_priority

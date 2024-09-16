@@ -1,6 +1,7 @@
 
 import json
 
+
 class TaskManager:
     def __init__(self):
         self.tasks = []
@@ -17,10 +18,10 @@ class TaskManager:
     def complete_task(self, task_id):
         for task in self.tasks:
             if task.id == task_id:
-               task.mark_as_complete()
+                task.mark_as_complete()
                 print(f"SUCCESS: Task marked as completed.")
                 #TODO Add to a completed items list
-                return
+
         print(f"Task not found.")
 
     def delete_task(self, task_id):
@@ -52,7 +53,7 @@ class TaskManager:
         return found_tasks
 
     def save_tasks(filename):
-       task_data = []
+        task_data = []
         for task in self.tasks:
             task_dict = {
                 'id': task.id,
